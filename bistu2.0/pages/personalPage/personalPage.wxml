@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="top">
+    <view class="left">
+      <image class="avatar" src="{{info.avatar}}" mode="aspectFill" 
+      bindtap="previewImgs"></image>
+    </view>
+    <view class="right">
+      <view class="r1">
+        <view class="nickName">{{info.nickName}}</view>
+        <view class="gender" wx:if="{{info.gender == 0}}">男</view>
+        <view class="gender" wx:if="{{info.gender == 1}}">女</view>
+      </view>
+      <view class="r2">
+        <button class="inform" bindtap="inform" wx:if="{{info.openId != openId}}">举报</button>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="campus" wx:if="{{info.campus == 0}}">校区: 小营</view>
+    <view class="campus" wx:if="{{info.campus == 1}}">校区: 清河</view>
+    <view class="campus" wx:if="{{info.campus == 2}}">校区: 沙河</view>
+    <view class="campus" wx:if="{{info.campus == 3}}">校区: 健翔桥</view>
+    <view class="signature">签名: {{info.signature}}</view>
+  </view>
+</view>

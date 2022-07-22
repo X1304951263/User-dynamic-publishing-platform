@@ -1,0 +1,27 @@
+<video wx:if="{{idx > 4}}" class="video" src="http://43.138.41.252/video/{{idx}}.mp4"  
+loop        
+controls="{{false}}"
+show-play-btn="{{false}}"
+show-center-play-btn="{{false}}"
+enable-progress-gesture="{{false}}"
+object-fit="cover"
+autoplay></video>
+<image class="video" wx:if="{{idx <= 4}}" src="http://43.138.41.252/video/{{idx}}.jpg"
+mode="aspectFill"></image>
+<cover-view class="cover-view">
+  <cover-button  class="login"  bindtap="login">
+    <cover-image src="../../images/me.png" class="wx"></cover-image>
+    <cover-view class="txt">账号登录</cover-view> 
+  </cover-button>
+  <cover-button  class="login1"  bindtap="login1">
+    <cover-image src="../../images/wx.png" class="wx1"></cover-image>
+    <cover-view class="txt1">登录/注册</cover-view> 
+  </cover-button>
+</cover-view>
+
+
+
+
+
+
+

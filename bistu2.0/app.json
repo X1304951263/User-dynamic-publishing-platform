@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/main/main",
+    "pages/publish/publish",
+    "pages/virify/virify",
+    "pages/manager/manager",
+    "pages/blackList/blackList",
+    "pages/blackReason/blackReason",
+    "pages/personalPage/personalPage",
+    "pages/inform/inform",
+    "pages/user/user",
+    "pages/comment/comment",
+    "pages/surface/surface",  
+    "pages/personalInfo/personalInfo",
+    "pages/account/account",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ddd",
+    "navigationBarTitleText": "北信云",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#07c160",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "友圈",
+        "iconPath": "images/c1.png",
+        "selectedIconPath": "images/c.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "images/add2.png",
+        "selectedIconPath": "images/add1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="menu">
+    <button class="applyer{{flag}}" bindtap="getApplyer">举报列表</button>
+    <button class="managerd{{flag}}" bindtap="getManager">黑名单</button>
+  </view>
+  <view class="main">
+    <view class="apply_manager" wx:if="{{flag == 0}}" wx:for="{{list}}" 
+     data-index="{{index}}">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill" data-index="{{index}}" bindtap="toUser"></image>
+      <view class="nickName" data-index="{{index}}">{{item.nickName}}</view>
+      <button class="add" data-index="{{index}}" bindtap="add">查看</button>
+    </view>
+    <view class="manager" wx:if="{{flag == 1}}" wx:for="{{list}}" data-index="{{index}}">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill" data-index="{{index}}" bindtap="toUser"></image>
+      <view class="nickName" data-index="{{index}}">{{item.nickName}}</view>
+      <button class="del" data-index="{{index}}" bindtap="unlock">解封</button>
+    </view>
+  </view>
+</view>

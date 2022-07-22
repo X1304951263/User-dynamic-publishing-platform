@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="menu">
+    <button class="applyer{{flag}}" bindtap="getApplyer">申请者</button>
+    <button class="managerd{{flag}}" bindtap="getManager">管理员</button>
+  </view>
+  <view class="main">
+    <view class="apply_manager" wx:if="{{flag == 0}}" wx:for="{{list}}" 
+     data-index="{{index}}">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill" data-index="{{index}}" bindtap="toUser"></image>
+      <view class="nickName" data-index="{{index}}">{{item.nickName}}</view>
+      <button class="add" data-index="{{index}}" bindtap="add">添加</button>
+    </view>
+    <view class="manager" wx:if="{{flag == 1}}" wx:for="{{list}}" data-index="{{index}}">
+      <image class="avatar" src="{{item.avatar}}" mode="aspectFill" data-index="{{index}}" bindtap="toUser"></image>
+      <view class="nickName" data-index="{{index}}">{{item.nickName}}</view>
+      <button class="del" data-index="{{index}}" bindtap="del">取消</button>
+    </view>
+  </view>
+</view>

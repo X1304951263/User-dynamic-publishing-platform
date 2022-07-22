@@ -1,0 +1,60 @@
+page {
+  background-color: rgb(255,249,248);
+}
+.page{
+  display: inline;
+  width: 100%;
+}
+.top{
+  width: 100%;
+  display: flex;
+  border-bottom: 1rpx solid rgb(194, 194, 194);
+}
+.avatar{
+  width: 140rpx;
+  height: 140rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+.nickName{
+  color: rgb(0, 90, 143);
+  margin-top: 115rpx;
+  font-size: 43rpx;
+  margin-left: 20rpx;
+}
+.r{
+  display: inline;
+  position: absolute;
+  right: 50rpx;
+}
+.del{
+  margin-top: 45rpx;
+  width: 110rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  background-color: rgb(231, 249, 255);
+}
+.lock{
+  margin-top: 10rpx;
+  width: 110rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  background-color: rgb(255, 182, 182);
+  
+}
+.bottom{
+  width: 100%;
+  display: flex;
+  border-bottom: 1rpx solid rgb(194, 194, 194);
+}
+.img{
+  height: 220rpx;
+  width: 300rpx;
+  margin-top: 10rpx;
+}
+.c{
+  width: 350rpx;
+}
+.content{
+  margin-left: 10rpx;
+}

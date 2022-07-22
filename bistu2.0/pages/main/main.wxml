@@ -1,0 +1,81 @@
+<view class="page">
+  <!-- 顶部导航栏 -->
+  <view class="top">
+    <button class="article{{idx}}" bindtap="getArticles">本 期</button>
+    <button class="quotation{{idx}}" bindtap="getSurfaces">往 期</button>
+  </view>
+
+  <view class="tab1" wx:if="{{idx == 0}}">
+    <!-- 公告栏 -->
+    <view class="notice">
+      <image class="laba" src="../../images/laba.png"></image>
+      <view space="nbsp" class="gonggao">一曲红尘烟雨梦，此生何惧君芳华。</view>
+    </view>
+
+    <!-- 本期文案 -->
+    <view class="title" wx:if="{{surface.id}}">
+      <view class="right">
+        <view class="topic">第{{surface.id}}期</view>
+        <image class="img" src="{{surface.img}}" mode="aspectFill" bindtap="viewSurface"></image>
+        <view class="sentence">{{surface.content}}</view>
+      </view>
+    </view>
+
+    <!-- 动态列表 -->
+    <view class="list" wx:for="{{list}}" data-index="{{index}}">
+      <view class="item" >
+        <view class="content-top">
+          <view class="content">
+            <view class="le">
+              <image class="ava" src="{{item.avatar}}" mode="aspectFill" 
+              data-index="{{index}}" bindtap="toUser"></image>
+            </view>
+            <view class="ri">
+              <view class="nickName"  data-index="{{index}}">{{item.nickName}}</view>
+              <view class="con" bindtap="getComment" data-index="{{index}}">{{item.content}}</view>
+            </view>
+          </view>
+          <view>
+            <image class="imgs1" wx:if="{{item.imgs.length > 0}}" src="{{item.imgs[0]}}" 
+              data-index="{{index}}" mode="aspectFill" bindtap="previewImgs1"></image>
+            <image class="imgs2" src="{{item.imgs[1]}}" wx:if="{{item.imgs.length > 1}}"
+              data-index="{{index}}" mode="aspectFill" bindtap="previewImgs2"></image>
+            <image class="imgs3" src="{{item.imgs[2]}}" wx:if="{{item.imgs.length > 2}}"
+              data-index="{{index}}" mode="aspectFill" bindtap="previewImgs3"></image>
+          </view>
+        </view>
+        
+        <view class="content-bottom">
+          <text class="time">{{item.timestamp}}</text>
+          <view class="operation">
+            <view class="love">
+              <image wx:if="{{item.isLove == 0}}" src="{{loveUrl}}" class="ai" bindtap="love" data-index="{{index}}"></image>
+              <image wx:else src="{{loveUrl2}}" class="ai" bindtap="love" 
+              data-index="{{index}}"></image>
+              <text class="aic">{{item.love}}</text>
+            </view>
+            <view class="comment" bindtap="getComment" data-index="{{index}}">
+              <image src="../../images/restore.png" class="ping"></image>
+              <text class="pingc">{{item.comment}}</text>
+            </view>
+          </view>
+        </view>
+      </view>   
+    </view>
+  </view>
+
+
+
+  <view class="list2"  wx:for="{{list2}}" data-index="{{index}}" wx:if="{{idx == 1}}" >
+    <view class="item2" > 
+      <view class="t">
+        <view class="topic2" data-index="{{index}}" bindtap="getArticlesById">第{{item.id}}期</view>
+        <view class="time2" data-index="{{index}}" bindtap="getArticlesById">{{item.timestamp}}</view>
+      </view>
+      <image class="img2" mode="aspectFill" src="{{item.img}}" data-index="{{index}}"
+      bindtap="getArticlesById"></image>
+      <view class="sentence2" data-index="{{index}}" bindtap="getArticlesById">{{item.content}}</view>
+    </view>
+  </view>
+
+</view>

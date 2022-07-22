@@ -1,0 +1,41 @@
+<view class="page">
+
+  <textarea maxlength="140"  adjust-position="false"
+  placeholder="请输入此刻的心情..." class="text" bindinput="handleChange" value="{{content}}"></textarea>
+
+  <view wx:if="{{imgLength > 0}}" wx:for="{{imgPaths}}" wx:key="{{unique}}" class="imgs">
+    <image mode="aspectFill" bindtap="previewImgs" class="img1"  data-index="{{index}}" 
+    src="{{item}}"></image>
+    <image src="../../images/del.png" class="del" bindtap="delImg" data-index="{{index}}"></image>
+  </view>
+
+  <button bindtap="addImg" class="addImg">图 片</button>
+  <!-- <button class="color5" wx:if="{{color == 5}}" 
+    bindtap="chooseColor" >
+      字体颜色(默认黑色)
+  </button>
+  <button class="color0" wx:if="{{color == 0}}" 
+    bindtap="chooseColor" >
+      橙 色
+  </button>
+  <button class="color1" wx:if="{{color == 1}}" 
+    bindtap="chooseColor" >
+      黄 色
+  </button>
+  <button class="color2" wx:if="{{color == 2}}" 
+    bindtap="chooseColor" >
+      绿 色
+  </button>
+  <button class="color3" wx:if="{{color == 3}}" 
+    bindtap="chooseColor" >
+      青 色
+  </button>
+  <button class="color4" wx:if="{{color == 4}}" 
+    bindtap="chooseColor">
+      蓝 色
+  </button> -->
+
+  <button class="submit" bindtap="submit">提 交</button>
+
+</view>
+

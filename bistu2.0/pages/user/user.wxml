@@ -1,0 +1,54 @@
+<view class="page">
+  <view class="info"  data-info="{{userInfo}}" bindtap="infoShow" hover-class="hover">
+    <image class="avatar" src="{{userInfo.avatar}}" mode="aspectFill"></image>
+    <text class="name">{{userInfo.nickName}}</text>
+    <image class="right" src="../../images/right.png"></image>
+  </view>
+  <view class="text">
+    <view class="qian">签名:</view>
+    <view class="signature">{{userInfo.signature}}</view>
+  </view>
+  <view class="list">
+    <view class="item">
+      <button class="btn" hover-class="hover">
+        <view class="txt">我的动态</view>
+        <image src="../../images/right.png" class="right1"></image>
+      </button>
+    </view>
+    <view class="item" wx:if="{{userInfo.auth == 0}}" bindtap="applyManager">
+      <button class="btn" hover-class="hover">
+        <view class="txt">申请管理员</view>
+        <image src="../../images/right.png" class="right2"></image>
+      </button>
+    </view>
+    <view class="item" wx:if="{{userInfo.auth > 0}}" bindtap="toVirify">
+      <button class="btn" hover-class="hover">
+        <view class="txt">动态审核</view>
+        <image src="../../images/right.png" class="right1"></image>
+      </button>
+    </view>
+    <view class="item" wx:if="{{userInfo.auth == 2}}" bindtap="getBlackList">
+      <button class="btn" hover-class="hover">
+        <view class="txt">封号列表</view>
+        <image src="../../images/right.png" class="right1"></image>
+      </button>
+    </view>
+    <view class="item" wx:if="{{userInfo.auth == 2}}" bindtap="getAdmins">
+      <button class="btn" hover-class="hover" >
+        <view class="txt">管理员列表</view>
+        <image src="../../images/right.png" class="right2"></image>
+      </button>
+    </view>
+    <view class="item">
+      <button class="btn" hover-class="hover" bindtap="getPhone">
+        <view class="txt">联系开发者</view>
+        <image src="../../images/right.png" class="right2"></image>
+      </button>
+    </view>
+    <view>
+      <button bindtap="logout" class="logout" hover-class="hover">
+        <view class="outTxt">退 出 登 录</view>
+      </button>
+    </view>
+  </view>
+</view>

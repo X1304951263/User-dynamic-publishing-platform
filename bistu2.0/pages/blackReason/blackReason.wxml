@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="top">
+    <image class="avatar" src="{{info.avatar}}" mode="aspectFill" bindtap="toUser"></image>
+    <view class="nickName">{{info.nickName}}</view>
+    <view class="r">
+      <button class="del" bindtap="del">删除</button>
+      <button class="lock" bindtap="lock">封禁</button>
+    </view>
+  </view>
+  
+  <view class="bottom" wx:for="{{list}}" data-index="{{index}}">
+    <image class="img" wx:if="{{item.img.length > 0}}" src="{{item.img}}" mode="aspectFill"
+    bindtap="previewImgs" data-index="{{index}}"></image>
+    <view class="c">
+      <view class="content">举报原因：{{item.content}}</view>
+    </view>
+  </view>
+</view>

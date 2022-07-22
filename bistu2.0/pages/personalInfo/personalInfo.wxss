@@ -1,0 +1,112 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+}
+
+.avatar {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 5%;
+  margin-top: 5rpx;
+  margin-left: 392rpx;
+}
+
+.right1 {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+
+.right2 {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+.right3 {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+
+.lsit {
+  background-color:azure;
+  display: flex; 
+}
+
+.item {
+  background-color:azure;
+  display: flex; 
+  border-bottom: 0px solid #f7f6f6;
+}
+.item1 {
+  background-color:azure;
+  display: flex; 
+  border-bottom: 0px solid #f7f6f6;
+  height: 160rpx;
+}
+.btn1 {
+  width: 100%;
+  height: 160rpx;
+  background-color: azure;
+  align-items: center;
+  display: flex;
+}
+
+.btn {
+  width: 100%;
+  height: 120rpx;
+  background-color: azure;
+  align-items: center;
+  display: flex;
+}
+
+.txt {
+  font-size: 35rpx;
+  margin-left: 10rpx;
+  color: #433333;
+}
+.nickName{
+  font-size:40rpx;
+  width: 350rpx;
+  margin-left: 174rpx;
+  text-align: right;
+}
+
+.sex {
+  font-size: 40rpx;
+  width: 40rpx;
+  margin-left: 484rpx;
+}
+
+.area {
+  margin-left: 404rpx;
+  font-size: 40rpx;
+  width: 120rpx;
+  text-align: right;
+}
+
+.sig {
+  width: 524rpx;
+  font-size: 32rpx;
+  text-align: right;
+}
+
+.input {
+  height: 90rpx;
+  font-size: 40rpx;
+  width: 100%;
+  color: rgb(63, 63, 63);
+  background-color: rgb(233, 233, 233);
+}
+.input1 {
+  height: 80rpx;
+  font-size: 37rpx;
+  width: 592rpx;
+  color: rgb(63, 63, 63);
+  background-color: rgb(233, 233, 233);
+}
+
+.hover {
+  background-color: #ebebeb;
+}

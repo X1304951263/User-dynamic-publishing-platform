@@ -1,0 +1,16 @@
+<view class="page">
+
+  <textarea maxlength="40"  adjust-position="false"
+  placeholder="请输入本期的文案..." class="text" bindinput="handleChange" value="{{content}}"></textarea>
+
+  <image mode="aspectFill" bindtap="previewImgs" class="img1"  wx:if="{{url}}" 
+    src="{{url}}"></image>
+  <image src="../../images/del.png" class="del" bindtap="delImg"  wx:if="{{url}}"></image>
+
+
+  <button bindtap="addImg" class="addImg">背 景 图 片</button>
+
+  <button class="submit" bindtap="submit">正 式 发 布</button>
+
+</view>
+

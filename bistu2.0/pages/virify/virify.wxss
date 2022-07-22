@@ -1,0 +1,191 @@
+page{
+  width: 100%;
+  background-color: rgb(255,249,248);
+}
+.page{
+  display: inline;
+  width: 100%;
+}
+.top{
+  width: 100%;
+  display: flex;
+  height: 70rpx;
+}
+.article1{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(210, 255, 255);
+}
+.article0{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(130, 194, 255);
+}
+.quotation1{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(130, 194, 255);
+}
+.quotation0{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(210, 255, 255);
+}
+.notice{
+  display: flex;
+  width: 750rpx;
+  height: 70rpx;
+  margin-top: 71rpx;
+  background-color: rgb(255, 203, 203);
+}
+.title{
+  display: flex;
+  width: 100%;
+  height: 70rpx;
+}
+.virify{
+  height: 100%;
+  width: 375rpx;
+  align-items: center;
+  background-color: rgb(255, 222, 255);
+}
+.virified{
+  height: 100%;
+  width: 375rpx;
+  align-items: center;
+  background-color: rgb(255, 237, 255);
+}
+.item {
+  width: 100%;
+  padding: 20rpx 20rpx;
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+}
+
+.left {
+  width: 80rpx;
+  margin-right: 10rpx;
+  /* background-color: rgb(58, 80, 72); */
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  background: #f3f3f3;
+}
+
+.right {
+  width: 620rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.nickname {
+  font-size: 35rpx;
+  line-height: 50rpx;
+  color: #3b4977;
+  margin-left: 15rpx;
+}
+
+.content {
+  font-size: 35rpx;
+  line-height: 40rpx;
+  color: #181818;
+  margin-bottom: 10rpx;
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+  margin-left: 15rpx;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.image-list .image {
+  width: 180rpx;
+  height: 180rpx;
+  background: #f3f3f3;
+  margin-left: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.time-area {
+  display: flex;
+  height: 70rpx;
+  position: relative;
+  align-items: center;
+  margin-left: 15rpx;
+} 
+
+.time-area .time {
+  font-size: 26rpx;
+  line-height: 70rpx;
+  color: #696969;
+}
+
+.time-area .operation-button {
+  height: 40rpx;
+  width: 70rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 15rpx;
+}
+
+.time-area .operation-pannel {
+  position: absolute;
+  top: 7rpx;
+  right: 5rpx;
+  width: 340rpx;
+  line-height: 70rpx;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+  color: white;
+  text-align: center;
+  display: flex;
+  /* background-color: rgb(78, 92, 87); */
+
+}
+
+.time-area .operation-pannel .tab {
+  display: inline-block;
+  width: 150rpx;
+}
+
+.time-area .operation-pannel .tab .image {
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.pub{
+  width: 33%;
+  height: 50rpx;
+  font-size: 23rpx;
+  text-align:center;
+}
+.setRed{
+  width: 33%;
+  height: 50rpx;
+  font-size: 23rpx;
+  text-align:center;
+}
+.del{
+  width: 33%;
+  height: 50rpx;
+  font-size: 23rpx;
+  text-align:center;
+}
+.surface{
+  background-color: rgb(196, 227, 255);
+  width: 90%;
+  margin-top: 10rpx;
+  height: 80rpx;
+  font-size: 35rpx;
+}

@@ -1,0 +1,80 @@
+<view class="page" >
+
+  <view class="item">
+    <view class="content-top">
+      <view class="content">
+        <view class="le">
+          <image class="ava" src="{{item.avatar}}" mode="aspectFill" bindtap="toUser"></image>
+        </view>
+        <view class="ri">
+          <view class="nickName">{{item.nickName}}</view>
+          <view class="con">{{item.content}}</view>
+        </view>
+      </view>
+      <view>
+        <image class="imgs1" wx:if="{{item.imgs.length > 0}}" src="{{item.imgs[0]}}" 
+           mode="aspectFill" bindtap="previewImgs1"></image>
+        <image class="imgs2" src="{{item.imgs[1]}}" wx:if="{{item.imgs.length > 1}}"
+           mode="aspectFill" bindtap="previewImgs2"></image>
+        <image class="imgs3" src="{{item.imgs[2]}}" wx:if="{{item.imgs.length > 2}}"
+           mode="aspectFill" bindtap="previewImgs3"></image>
+      </view>
+    </view>
+        
+    <view class="content-bottom">
+      <text class="time">{{item.timestamp}}</text>
+      <view class="operation">
+        <view class="love">
+          <image wx:if="{{item.isLove == 0}}" src="{{loveUrl}}" 
+            class="ai" bindtap="love"></image>
+          <image wx:else src="{{loveUrl2}}" class="ai" bindtap="love" ></image>
+          <text class="aic">{{item.love}}</text>
+        </view>
+        <view class="comment">
+          <image src="../../images/restore.png" class="ping"></image>
+          <text class="pingc">{{item.comment}}</text>
+        </view>
+      </view>
+    </view>
+  </view> 
+
+  <!-- 评论列表 -->
+    <view class="comment1">
+    <view wx:if="{{!list}}" class="nodata">暂无数据</view>
+
+    <view  class="data" wx:for="{{list}}" wx:key="uni">
+      <view class="item2" data-index="{{index}}">
+        <text class="nickName1" data-index="{{index}}" bindtap="toUser1">{{item.nickName_one}}</text>
+        <text class="mid" wx:if="{{item.openId_two}}">回复</text>
+        <text class="nickName2" wx:if="{{item.openId_two}}" 
+          data-index="{{index}}" bindtap="toUser2">{{item.nickName_two}}</text>
+        <text class="content1" data-index="{{index}}" bindtap="com">：{{item.content}}</text>
+        <text wx:if="{{openId == item.openId_one}}" class="del" bindtap="del"
+        data-index="{{index}}">删除</text>
+      </view>
+    </view>
+  </view>  
+
+  <view class="talk" style="bottom:{{height}}px;">
+    <input type="text" class="input" placeholder="{{holder}}" focus="{{focus}}"
+     value="{{content}}" bindblur="lur" 	adjust-position="{{false}}"
+    bindinput="handleChange" bindfocus="focus" 	bindkeyboardheightchange="change">
+    </input>
+    <view class="send1" >
+      <text class="txt1"  bindtap="clear">清空</text>
+    </view>
+    <view class="send{{send == 2?'2':''}}" >
+      <text class="txt{{send == 2?'2':''}}"  bindtap="send" >发送</text>
+    </view>
+  </view>
+
+  <!-- <view class="talk1" style="bottom:{{height1}}px;" wx:if="{{p > 1}}">
+    <input type="text" class="input" placeholder="{{holder1}}" focus="{{focus1}}"
+     value="{{content1}}" bindblur="lur1" 	adjust-position="{{false}}"
+    bindinput="handleChange1" bindfocus="focus1"></input>
+    <view class="send{{send1 == 2?'2':''}}" >
+      <text class="txt{{send1 == 2?'2':''}}"  bindtap="send1">发送</text>
+    </view>
+  </view> -->
+  
+</view>

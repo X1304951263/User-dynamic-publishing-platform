@@ -1,0 +1,67 @@
+page{
+  background-color: rgb(255,249,248);
+}
+.page{
+  width: 100%;
+  display: inline;
+}
+.top{
+  width: 100%;
+  display: flex;
+  margin-top: 30rpx;
+  border-bottom: 1rpx solid rgb(136, 136, 136);
+}
+.right{
+  display: flex;
+}
+.r1{
+  display: inline;
+}
+.avatar{
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  width: 170rpx;
+  height: 170rpx;
+}
+.nickName{
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3rpx;
+}
+.gender{
+  margin-left: 30rpx;
+  font-size: 37rpx;
+  margin-top: 30rpx;
+  color: rgb(77, 77, 77);
+}
+.inform{
+  position: absolute;
+  right: 20rpx;
+  top: 50rpx;
+  height: 80rpx;
+  font-size: 32rpx;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 115, 115);
+}
+.bottom{
+  width: 100%;
+  display: inline;
+  border-bottom: 1rpx solid rgb(136, 136, 136);
+}
+.campus{
+  margin-top: 20rpx;
+  font-size: 37rpx;
+  color: rgb(77, 77, 77);
+  margin-left: 30rpx;
+  letter-spacing: 5rpx;
+}
+.signature{
+  font-size: 37rpx;
+  color: rgb(77, 77, 77);
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  letter-spacing: 2rpx;
+}

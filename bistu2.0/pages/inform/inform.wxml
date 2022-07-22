@@ -1,0 +1,15 @@
+<view class="page">
+<textarea maxlength="140"  adjust-position="false"
+placeholder="请输入举报原因..." class="text" bindinput="handleChange" value="{{content}}"></textarea>
+
+<view wx:if="{{imgLength > 0}}" wx:for="{{imgPaths}}" wx:key="{{unique}}" class="imgs">
+  <image mode="aspectFill" bindtap="previewImgs" class="img1"  data-index="{{index}}" 
+  src="{{item}}"></image>
+  <image src="../../images/del.png" class="del" bindtap="delImg" data-index="{{index}}"></image>
+</view>
+
+<button bindtap="addImg" class="addImg">截 图</button>
+<button class="submit" bindtap="submit">举 报</button>
+
+</view>
+

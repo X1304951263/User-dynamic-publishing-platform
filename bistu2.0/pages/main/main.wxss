@@ -1,0 +1,252 @@
+page {
+  background-color: rgb(255,249,248);
+}
+.tab1{
+  width: 750rpx;
+  display: inline;
+  height: 100%;
+  background-color: rgb(255,249,248);
+}
+.top{
+  display: flex;
+  width: 750rpx ;
+  height: 70rpx;
+  position: fixed;
+  top: 1rpx;
+}
+.article1{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(236, 255, 255);
+}
+.article0{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(130, 194, 255);
+}
+.quotation1{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(130, 194, 255);
+}
+.quotation0{
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgb(236, 255, 255);
+}
+.notice{
+  display: flex;
+  width: 750rpx;
+  height: 70rpx;
+  margin-top: 71rpx;
+  background-color: rgb(255, 203, 203);
+}
+.laba{
+  width: 45rpx;
+  height: 60rpx;
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+}
+.gonggao{
+  margin-left: 5rpx;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+.title{
+  display: flex;
+  width: 100%;
+  height: 380rpx;
+  background-color: rgb(255,249,248);
+  border-bottom: 1rpx solid rgb(209, 209, 209);
+}
+.topic{
+  margin-left: 41%;
+  margin-top: 10rpx;
+  height: 40rpx;
+  font-size: 38rpx;
+  color: red;
+}
+.avatar{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin-top: 50rpx;
+  margin-left: 35rpx;
+}
+.right{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.img{
+  width: 90%;
+  height: 300rpx;
+  margin-top: 70rpx;
+  margin-left: 5%;
+  position: absolute;
+  opacity: .9;
+}
+.sentence{
+  width: 675rpx;
+  font-size: 35rpx;
+  margin-left: 50rpx;
+  position: absolute;
+  bottom: 3rpx;
+  color: rgb(255, 255, 255);
+}
+.list{
+  display: inline;
+  width: 100%;
+}
+.item{
+  width: 730rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  background-color: rgb(255,249,248);
+  border-bottom: 1rpx solid rgb(209, 209, 209);
+}
+.content-top{
+  width: 100%;
+  display: inline;
+}
+.content{
+  display: flex;
+  width: 100%;
+}
+.le{
+  width: 105rpx;
+  height: 105rpx;
+}
+.ava{
+  width: 105rpx;
+  height: 105rpx;
+  margin-top: 5rpx;
+}
+.ri{
+  width: 600rpx;
+}
+.nickName{
+  width: auto;
+  margin-left: 10rpx;
+  font-size: 36rpx;
+  color: rgb(0, 90, 143);
+}
+.con{
+  font-size: 32rpx;
+  margin-left: 10rpx;
+  text-align: left;
+  color: rgb(89,112,156);
+}
+.imgs1{
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 115rpx;
+  margin-top: 10rpx;
+}
+.imgs2{
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.imgs3{
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.content-bottom{
+  margin-top: 20rpx;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+.time{
+  margin-top: 15rpx;
+  padding-left: 15rpx;
+  font-size: 25rpx;
+  color: rgb(85, 85, 85);
+}
+.operation{
+  display: flex;
+  margin-left: 230rpx;
+}
+.love{
+  display: flex;
+  margin-left: 40rpx;
+  width: 100rpx;
+}
+.ai{
+  width: 60rpx;
+  height: 60rpx;
+}
+.aic{
+  margin-top: 20rpx;
+  margin-left: -10rpx;
+  font-size: 25rpx;
+}
+.comment{
+  display: flex;
+  width: 100rpx;
+}
+.ping{
+  width: 55rpx;
+  height: 55rpx;
+  margin-top: 9rpx;
+}
+.pingc{
+  margin-top: 21rpx;
+  margin-left: -4rpx;
+  font-size: 26rpx;
+}
+
+.list2{
+  width: 100%;
+  display: inline;
+  background-color: rgb(255,249,248);
+}
+.item2{
+  width: 100%;
+  display: inline;
+  position: relative;
+  top: 71rpx;
+  height: 360rpx;
+  border-bottom: 1rpx solid rgb(209, 209, 209);
+}
+.t{
+  width: 100%;
+  display: flex;
+  height: 50rpx;
+}
+.topic2{
+  font-size: 35rpx;
+  margin-left: 39%;
+  color: red;
+}
+.time2{
+  font-size: 25rpx;
+  color: rgb(85, 85, 85);
+  margin-left: 50rpx;
+  margin-top: 13rpx;
+}
+.img2{
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 10rpx;
+  height: 300rpx;
+}
+.sentence2{
+  width: 670rpx;
+  font-size: 35rpx;
+  position: absolute;
+  bottom: 3rpx;
+  left: 35rpx;
+  color: rgb(255, 255, 255);
+}

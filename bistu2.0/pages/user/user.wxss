@@ -1,0 +1,110 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255,249,248);
+}
+
+.info {
+  height: 160rpx;
+  background-color: azure;
+  display: flex;
+  margin-top: 3rpx;
+  border-radius: 5rpx;
+  
+}
+.avatar {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 5%;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+.name {
+  width: 320rpx;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+  margin-top: 80rpx;
+}
+
+.right {
+  width: 60rpx;
+  height: 50rpx;
+  margin-top: 85rpx;
+  margin-left: 150rpx;
+}
+
+.text {
+  background-color: azure;
+  display: flex;
+  height: 160rpx;
+}
+
+.qian {
+  font-size: 40rpx; 
+  margin-left: 38rpx;
+  margin-top: 22rpx;
+  color: #5f5e5e;
+}
+
+
+.signature {
+  font-size: 36rpx;
+  margin-top: 26rpx;
+  margin-left: 20rpx;
+}
+
+.lsit {
+  background-color:azure;
+  display: flex; 
+}
+
+.item {
+  background-color:azure;
+  display: flex; 
+  border-bottom: 0px solid #f0f0f0;
+}
+
+.btn {
+  width: 100%;
+  height: 120rpx;
+  background-color: azure;
+  align-items: center;
+  display: flex;
+}
+
+.txt {
+  font-size: 35rpx;
+  margin-left: 10rpx;
+  color: #433333;
+}
+.right1 {
+  width: 60rpx;
+  height: 50rpx;
+  margin-left: 470rpx;
+}
+.right2 {
+  width: 60rpx;
+  height: 50rpx;
+  margin-left: 435rpx;
+}
+
+.logout {
+	background-color:azure;
+	display: flex; 
+	align-items: center;
+	width: 100%;
+	height: 100rpx;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  border: 1rpx solid #b6b6b6;
+}
+
+.outTxt {
+  margin-left: 250rpx;
+  font-size: 45rpx;
+  color: rgb(255, 37, 37);
+}
+
+.hover {
+  background-color: #d6d6d6;
+}

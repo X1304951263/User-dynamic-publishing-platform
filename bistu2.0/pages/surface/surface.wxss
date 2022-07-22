@@ -1,0 +1,48 @@
+page {
+  background-color: rgb(255,249,248);
+}
+.page{
+  display: inline;
+  height: 100%;
+  width: 100%;
+}
+.text{
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 150rpx;
+  font-size: 36rpx;
+  height: 280rpx;
+  background-color: aliceblue;
+  opacity: .6;
+}
+.del{
+  width: 30rpx;
+  height: 30rpx;
+  margin-bottom: 435rpx;
+  margin-left: -15rpx;
+}
+.img1{
+  width: 92%;
+  height: 450rpx;
+  margin-left: 4%;
+  margin-top: 30rpx;
+}
+.addImg{
+  margin-top: 60rpx;
+  background-color: rgb(120, 212, 255);
+  border-radius: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+
+
+.submit{
+  margin-top: 40rpx;
+  border-radius: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  background-color: rgb(41, 187, 255);
+}
+
+

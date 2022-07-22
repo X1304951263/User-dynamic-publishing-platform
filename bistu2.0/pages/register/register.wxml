@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="txt">账 号 注 册</view>
+  <view class="account">
+    <image src="../../images/me.png" class="img1"></image>
+    <input type="text" bindinput='getAccount' placeholder="账 号(6到14位字母或数字)" class="input1" 
+    value="{{openId}}"></input>
+  </view>
+  
+  <view class="word">
+    <image src="../../images/word.png" class="img2"></image>
+    <input type="password" bindinput='getWord' value="{{word}}" 
+    placeholder="密 码(6到14位字母或数字)" class="input2"></input>
+  </view> 
+
+  <view class="word">
+    <image src="../../images/email.png" class="img2"></image>
+    <input type="text" bindinput='getEmail' value="{{email}}" 
+    placeholder="邮 箱" class="input2"></input>
+  </view> 
+  <view class="word">
+    <input type="number" bindinput='getCode' maxlength="6" value="{{code}}" 
+    placeholder="请输入验证码" class="input3"></input>
+    <button class="sendCode" bindtap="sendCode" disabled="{{flag}}">{{sendCode}}</button>
+  </view>
+  <button class="login" bindtap="register">注    册</button>
+
+</view>

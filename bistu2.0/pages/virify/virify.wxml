@@ -1,0 +1,66 @@
+<view class="page">
+  <view class="top">
+    <button  class="article{{idx}}" bindtap="getArticle">待审核</button>
+    <button  class="quotation{{idx}}" bindtap="getChoosedArticles">已审核</button>
+  </view>
+
+  <view wx:if="{{idx == 0}}" class="item" wx:for="{{list}}" data-index="{{index}}"> 
+    <view class="left">
+      <image class="avatar" mode="aspectFill" src="{{item.avatar}}" data-index="{{index}}" bindtap="toUser"></image>
+    </view>
+    <view class="right">
+      <view class="nickname">{{item.nickName}}</view>
+      <text  class="content" space="nbsp">{{item.content}}</text>
+      <view class="image-list">
+        <image wx:if="{{item.imgs.length > 0}}" class="image" bindtap="previewImgs1"
+          mode="aspectFill" src="{{item.imgs[0]}}" data-index="{{index}}"></image>
+        <image wx:if="{{item.imgs.length > 1}}" class="image" bindtap="previewImgs2"
+          mode="aspectFill" src="{{item.imgs[1]}}" data-index="{{index}}"></image>
+        <image wx:if="{{item.imgs.length > 2}}" class="image" bindtap="previewImgs3"
+          mode="aspectFill" src="{{item.imgs[2]}}" data-index="{{index}}"></image>
+      </view>
+      <view class="time-area">
+        <view class="time">{{item.timestamp}}</view>
+        <view>
+          <view class="operation-pannel">
+            <button class="pub" data-index="{{index}}" bindtap="pub">选择</button>
+            <button class="setRed" data-index="{{index}}" bindtap="del">删除</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{idx == 1}}" class="item" wx:for="{{list}}"  data-index="{{index}}"> 
+    <view class="left">
+      <image class="avatar" mode="aspectFill" src="{{item.avatar}}" data-index="{{index}}" bindtap="toUser"></image>
+    </view>
+    <view class="right">
+      <view class="nickname">{{item.nickName}}</view>
+      <text  class="content" space="nbsp">{{item.content}}</text>
+      <view class="image-list">
+        <image wx:if="{{item.imgs.length > 0}}" class="image" bindtap="previewImgs1"
+          mode="aspectFill" src="{{item.imgs[0]}}" data-index="{{index}}"></image>
+        <image wx:if="{{item.imgs.length > 1}}" class="image" bindtap="previewImgs2"
+          mode="aspectFill" src="{{item.imgs[1]}}" data-index="{{index}}"></image>
+        <image wx:if="{{item.imgs.length > 2}}" class="image" bindtap="previewImgs3"
+          mode="aspectFill" src="{{item.imgs[2]}}" data-index="{{index}}"></image>
+      </view>
+      <view class="time-area">
+        <view class="time">{{item.timestamp}}</view>
+        <view>
+          <view class="operation-pannel">
+            <button class="pub" data-index="{{index}}" bindtap="hide">屏蔽</button>
+            <button class="setRed" data-index="{{index}}" bindtap="setRed">标红</button>
+            <button bindtap="del1" data-index="{{index}}" class="del">删除</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button wx:if="{{idx == 1}}" class="surface"  bindtap="surface">发布本期动态</button>
+
+
+
+
+</view>

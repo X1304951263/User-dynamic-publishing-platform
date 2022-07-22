@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="txt">账 号 登 录</view>
+  <view class="account">
+    <image src="../../images/me.png" class="img1"></image>
+    <input type="text" bindinput='getAccount' placeholder="账号/邮箱" class="input1" 
+    value="{{openId}}"></input>
+  </view>
+  
+  <view class="word">
+    <image src="../../images/word.png" class="img2"></image>
+    <input type="password" bindinput='getWord' value="{{word}}" 
+    placeholder="密码" class="input2"></input>
+  </view> 
+  
+  <button class="login" bindtap="login">登     录</button>
+  
+  <view class="other">
+    <button class="btn" plain="true" bindtap="loginOnWx" >
+      <text class="txt2">其他登录方式</text>
+      <image src="../../images/wx.png" class="img3"></image>
+    </button>
+    <button  class="register" plain="true" bindtap="register">注册账户</button>
+  </view>
+</view>

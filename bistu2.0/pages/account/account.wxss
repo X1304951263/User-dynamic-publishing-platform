@@ -1,0 +1,98 @@
+page {
+  background-color: rgb(255,249,248);
+}
+.page{
+  display: inline;
+  height: 100%;
+  width: 100%;
+}
+.txt{
+  font-size: 60rpx;
+  color:rgb(77, 76, 76);
+  width: 100%;
+  height: 100rpx;
+  margin-left: 34%;
+  margin-top: 43%;
+}
+.account{
+  display: flex;
+  width: 735;
+  height: 80rpx;
+  margin-top: 90rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  border: 3rpx solid #9c9b99; 
+  background-color: white;
+  opacity: .8;
+}
+.img1{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+.input1{
+  width: 650rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  background-color: rgb(255, 255, 255);
+  opacity: .8;
+}
+.word{
+  display: flex;
+  width: 735rpx;
+  height: 80rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  margin-top: 30rpx;
+  border: 3rpx solid #9c9b99; 
+  background-color: white;
+  opacity: .8;
+}
+.img2{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+.input2{
+  width: 650rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  background-color: rgb(255, 255, 255);
+  opacity: .8;
+}
+.login{
+  margin-top: 50rpx;
+  margin-left: 5rpx;
+  width: 740rpx;
+  color: white;
+  background-color: rgb(19, 160, 255);
+}
+.other{
+  display: flex;
+  width: 740rpx;
+  height: 80rpx;
+  margin-left: 5rpx;
+  margin-top: 10rpx;
+}
+.btn{
+  display: flex;
+  height: 80rpx;
+  margin-left: 5rpx;
+  align-items: center;
+}
+.img3{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+.register{
+  height:80rpx;
+  line-height: 80rpx;
+  align-items: center;
+  margin-right: 10rpx;
+}
+

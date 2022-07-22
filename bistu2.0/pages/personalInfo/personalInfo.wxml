@@ -1,0 +1,55 @@
+<view class="page">
+  <view class="list">
+    <view class="item1">
+      <button class="btn1" hover-class="hover" bindtap="setAvatar">
+        <view class="txt">头像 </view>
+        <image src="{{avatar}}" class="avatar" mode="aspectFill"></image>
+        <image src="../../images/right.png" class="right1"></image>
+      </button>
+    </view>
+    <view class="item">
+      <button class="btn" hover-class="hover" bindtap="setNickName">
+        <view class="txt">昵称 </view>
+        <text class="nickName">{{nickName}}</text>
+        <image src="../../images/right.png" class="right2"></image>
+      </button>
+    </view>
+    <view class="item">
+      <button class="btn" hover-class="hover" bindtap="chooseSex">
+        <view class="txt">性别 </view>
+        <text class="sex" wx:if="{{gender == 0}}">男</text>
+        <text class="sex" wx:else>女</text>
+        <image src="../../images/right.png" class="right2"></image>
+      </button>
+    </view>
+    <view class="item">
+      <button class="btn" hover-class="hover" bindtap="setCity">
+        <view class="txt">校区 </view>
+        <text class="area" wx:if="{{city == 0}}">小营</text>
+        <text class="area" wx:if="{{city == 1}}">清河</text>
+        <text class="area" wx:if="{{city == 2}}">沙河</text>
+        <text class="area" wx:if="{{city == 3}}">健翔桥</text>
+        <image src="../../images/right.png" class="right2"></image>
+      </button>
+    </view>
+    <view class="item">
+      <button class="btn" hover-class="hover" bindtap="setSignature">
+        <view class="txt">签名 </view>
+        <text class="sig">{{signature}}</text>
+        <image src="../../images/right.png" class="right2"></image>
+      </button>
+    </view>
+  </view>
+</view>
+<modal hidden="{{hiddenmodalput}}"  class="modal" 
+   			confirm-text="完成" cancel-text="取消" bindcancel="cancel" 
+   			bindconfirm="confirm">
+     <input type="text" maxlength="8" focus="true"
+     bindinput='getInputValue' value="{{newName}}" class="input" ></input>
+</modal>
+<modal hidden="{{hiddenmodalput1}}"  class="modal" 
+   			confirm-text="完成" cancel-text="取消" bindcancel="cancel1" 
+   			bindconfirm="confirm1">
+     <input type="text" maxlength="14" focus="{{true}}"
+     bindinput='getInputValue1' value="{{newSignature}}" class="input1" ></input>
+</modal>
