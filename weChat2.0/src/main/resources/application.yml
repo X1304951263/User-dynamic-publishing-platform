@@ -1,0 +1,39 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wechat?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+    username: root
+    password: xw123456
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+
+  mail:
+    username: 1304951263@qq.com
+    nickname: 问天羽
+    password: dyjdygcpbhzebabi
+    host: smtp.qq.com
+    port: 465
+    protocol: smtp
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
