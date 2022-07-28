@@ -13,9 +13,9 @@ import java.util.Map;
  */
 public class GetOpenId {
     public static final String GETCODE_ERROR = "code is error!";
-    public static String URL = "https://api.weixin.qq.com/sns/jscode2session?appid=wx5e8f34f1928222bc&secret=a8cf12df1e597d23dc6c584bcdacaa9c&js_code=";
+    public static String URL = "https://api.weixin.qq.com/sns/jscode2session?appid=xxxxx&secret=xxxxxxx&js_code=";
     public static String getOpenId(String code){
-        String url = URL + code + "&grant_type=authorization_code";
+        String url = URL + code + "xxxxxxxxxxxxxxxxxxxxxxx";
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
         String openid = "";
