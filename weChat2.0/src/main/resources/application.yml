@@ -18,9 +18,9 @@ spring:
     port: 6379
 
   mail:
-    username: 1304951263@qq.com
+    username: xxxxxx
     nickname: 问天羽
-    password: dyjdygcpbhzebabi
+    password: xxxxxxx
     host: smtp.qq.com
     port: 465
     protocol: smtp
