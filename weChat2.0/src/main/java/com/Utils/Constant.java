@@ -41,15 +41,15 @@ public class Constant {
     public static int USER_ARTICLE_READY_STATE = 1;  //审核过关的动态状态位
 
     //账户注册用户默认头像地址
-    /*public static String DEFAULT_AVATAR_URL = "http://43.138.41.252/avatar/1.jpg";
+    /*public static String DEFAULT_AVATAR_URL = "http://xxx/avatar/1.jpg";
     public static String AVATAR_URL = "/usr/local/nginx/images/avatar/"; //头像存储的本地地址
-    public static String AVATAR_SERVER_URL = "http://43.138.41.252/avatar/";  //用户头像访问位置
+    public static String AVATAR_SERVER_URL = "http://xxx/avatar/";  //用户头像访问位置
     public static String DEFAULT_ARTICLE_IMGS_URL = "/usr/local/nginx/images/article/"; //用户动态图片存储位置
-    public static String ARTICLE_SERVER_URL = "http://43.138.41.252/article/"; //用户动态图片访问地址
+    public static String ARTICLE_SERVER_URL = "http://xxx/article/"; //用户动态图片访问地址
     public static String DEFAULT_SURFACE_IMGS_URL = "/usr/local/nginx/images/surface/"; //用户动态图片存储位置
-    public static String SURFACE_SERVER_URL = "http://43.138.41.252/surface/"; //封面图片访问地址
+    public static String SURFACE_SERVER_URL = "http://xxx/surface/"; //封面图片访问地址
     public static String DEFAULT_INFORM_IMG_URL = "/usr/local/nginx/images/inform/"; //用户动态图片存储位置
-    public static String INFORM_SERVER_URL = "http://43.138.41.252/inform/"; //封面图片访问地址*/
+    public static String INFORM_SERVER_URL = "http://xxx/inform/"; //封面图片访问地址*/
 
     public static String DEFAULT_AVATAR_URL = "http://127.0.0.1:8081/avatar/1.jpg";
     public static String AVATAR_URL = "D:\\BaiduNetdiskDownload\\nginx-1.20.1\\nginx-1.20.1\\images\\avatar\\"; //头像存储的本地地址
